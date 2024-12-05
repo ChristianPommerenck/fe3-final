@@ -1,22 +1,19 @@
 import React, { useEffect, useState } from "react";
 import Card from "../Components/Card";
+import { useDentistaStates } from "../Context/Context";
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Favs = () => {
-  const [favDentistas, setFavDentistas] = useState([]);
-  useEffect(() => {
-    const storedFavs = JSON.parse(localStorage.getItem("favs")) || [];
-    setFavDentistas(storedFavs);
-  }, []); 
+  const { favs } = useDentistaStates() ; 
 
   return (
     <>
       <h1>Dentists Favs</h1>
       <div className="card-grid">
-      {favDentistas.length > 0 ? (
-          favDentistas.map((dentista) => (
-            <Card key={dentista.id} {...dentista} />
+      {favs.length > 0 ? (
+          favs.map((dentista) => (
+            <Card key={dentista.id} dentista={dentista} />
           ))
         ) : (
           <p>No tienes dentistas favoritos</p>
