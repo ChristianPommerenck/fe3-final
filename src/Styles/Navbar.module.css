@@ -1,4 +1,4 @@
-.foot{
+.nav{
     display: flex;
     flex-direction:row;
     align-items: center;
@@ -8,20 +8,17 @@
     margin: 10px;
     padding: 10px;
     background-color: #7ec3df;
-    color: rgb(3, 3, 3);
+    font-size: 2vh;
+    color: rgb(131, 0, 0);
+    justify-content: space-between
+    
 }
 
-.logoDH{
-    width: 20%;
-    height: 10%;
+.back{
+    width: 5%;
+    font-size: 2vh;
 }
 
-.DH{
-    width: 2%;
-    height: 10%;
-}
-
-.power{
-    font-size:3vh ;
-    height: 10%;
+.change{
+    font-size: 2vh;
 }
