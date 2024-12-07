@@ -1,8 +1,10 @@
 .lista{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 90vw;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
 }
 
 .home{
@@ -10,7 +12,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    width: 100vw;
+    width: 96vw;
     height: auto;
 }
 

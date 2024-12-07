@@ -47,7 +47,7 @@ const Form = () => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-      <h3> Debe loguearse </h3>
+      <h3> Contacto</h3>
         <label>Nombre:</label>
           <input 
             type="text"

@@ -1,63 +1,42 @@
-.card{
+.card {
     display: flex;
-    width: 19%;
-    margin: 10px;
-    flex-wrap: wrap;
-    border: 5px black solid;
-    border-radius: 5%;
     flex-direction: column;
-    align-content: center;
-    align-items: center; 
-    background-color:rgb(194, 194, 194);
-}
-
-.link{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    align-items: center; 
-}
-
-.presentacion{
-        background-color:#7ec3df;
-        display: flex;
-        border: 5px black solid;
-        width: 98%;
-        border-radius: 30px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-content: center;
-}
-
-.h3{
-    font-size: 2vh;
-    color: brown;   
-}
-
-.h2{
-    font-size: 2vh;
-    color: brown; 
-
-}
-
-.img{
-    margin: 10px;
-    width: 90%;
-    border-radius: 5%;
-    border: 5px black solid;
+    width: 15%;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    border: 3px var(--border-color) solid;
+    margin: 5px;
+  }
+  
+  .img {
     
-}
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .presentacion {
+    margin-top: 10px;
+  }
+  
+  .h2, .h3 {
+    margin: 0;
+  }
+  
+  .favButton {
+    background-color: var(---background-color);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .favButton:hover {
+    background-color:var(----background-color);
+  }
 
-.favButton{
-    margin: 10px;
-    font-size: 1.5vh;
-    color: brown;
-    border: 5px black solid;  
-    border-radius: 15px;
-    font-weight:bold;
-    background-color: rgb(224, 228, 166);
-   
-}
+  a, .link {
+    text-decoration: none; 
+    color: inherit;         
+  }

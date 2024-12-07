@@ -1,31 +1,29 @@
+import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import React from 'react' 
-import {nav, back,change} from "../Styles/Navbar.module.css"
-
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
+import { useGlobalContext } from "../Context/Context";
+import { nav, back, change } from "../Styles/Navbar.module.css";
 
 const Navbar = () => {
+  const { theme, toggleTheme, favs, setFavs } = useGlobalContext();  // Acceder al contexto global
   const navigate = useNavigate();
+
   return (
-    <nav className={nav}>
-      {/* Aqui deberan agregar los liks correspondientes a las rutas definidas */}
-      <button onClick={() => navigate(-1)} className={back}>🔙</button>
+    <nav className={`${nav} ${theme === "dark" ? "dark-theme" : "light-theme"}`}>
+      {/* Aquí deberían agregar los links correspondientes a las rutas definidas */}
+      <button onClick={() => navigate(-1)} className={back}>&#11176;</button>
       <Link to="/">
         <h4>Home</h4>
       </Link>
       <Link to="/contact">
         <h4>Contacto</h4>
       </Link>
-      <Link to="/detail">
-        <h4>Detalles Dentista</h4>
-      </Link>
       <Link to="/favs">
         <h4>Destacados</h4>
       </Link>
-      {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
-      <button className={change}>Change theme</button>
+      {/* El botón para cambiar el tema */}
+      <button className={change} onClick={toggleTheme}>{theme === "dark" ? "☀️" : "🌑"}</button>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

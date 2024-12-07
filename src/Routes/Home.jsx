@@ -1,12 +1,12 @@
 import React from 'react'
 import Card from '../Components/Card'
-import { useDentistaStates } from "../Context/Context";
+import { useGlobalContext } from "../Context/Context";
 import {lista, home} from "../Styles/Home.module.css"
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Home = () => {
-  const { state } = useDentistaStates();
+  const { state } = useGlobalContext();
   return (
     <main className= {home} >
       <h1>Home</h1>
