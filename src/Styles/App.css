@@ -1,7 +1,6 @@
 #root {
         display: flex;
         margin: 0 ;
-        height: 100vh;
         text-align: center;
         flex-direction: column;
         flex-wrap: wrap;
@@ -32,7 +31,6 @@ body {
       background-color: var(--background-color);
       color: var(--text-color);
       margin: 0px;
-     
     }
 
 

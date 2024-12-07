@@ -7,8 +7,8 @@ export const reducer = (state, action) => {
     case "TOGGLE_FAV": {
       const exists = state.favs.some((fav) => fav.id === action.payload.id);
       const updatedFavs = exists
-        ? state.favs.filter((fav) => fav.id !== action.payload.id) // Eliminar de favoritos
-        : [...state.favs, action.payload]; // Agregar a favoritos
+        ? state.favs.filter((fav) => fav.id !== action.payload.id) 
+        : [...state.favs, action.payload]; 
       return { ...state, favs: updatedFavs };
     }
     case "SET_THEME":

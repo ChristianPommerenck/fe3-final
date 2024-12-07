@@ -9,12 +9,13 @@
   .back {
     background-color: transparent;
     border: none;
-    font-size: 2.5vh;
+    font-size: 5vh;
     color: var(--text-color);
   }
   
   .change {
-    background-color: transparent;
+    background-color:transparent;
     border: none;
     cursor: pointer;
+    font-size: 5vh;
   }

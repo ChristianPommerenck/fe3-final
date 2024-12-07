@@ -5,7 +5,7 @@ import { card, img, presentacion, h2, h3, favButton } from "../Styles/Card.modul
 
 const Card = ({ dentista }) => {
   const { theme, favs, dispatch } = useGlobalContext();  
-  const location = useLocation(); 
+ 
 
  
   const addFav = () => {
@@ -16,15 +16,14 @@ const Card = ({ dentista }) => {
   };
 
 
-  const showFavButton = location.pathname === "/";
 
-  // Asignamos las clases dependiendo del tema
+ 
   const cardClass = `${card} ${theme === "dark" ? "dark-theme" : "light-theme"}`;
   const textClass = theme === "dark" ? "dark-text" : "light-text";
 
   return (
     <div className={cardClass}>
-      {/* Link a la página de detalle del dentista */}
+   
       <Link to={"/detail/" + dentista.id}>
         <img src="/images/doctor.jpg" alt={dentista.name} className={img} />
         <div className={presentacion}>
@@ -33,15 +32,14 @@ const Card = ({ dentista }) => {
         </div>
       </Link>
 
-      {/* Mostrar el botón de agregar a favoritos solo en la página principal */}
-      {showFavButton && (
+    
         <button 
           onClick={addFav} 
           className={favButton}
         >
           {favs.some((fav) => fav.id === dentista.id) ? "Remove fav" : "Add fav"}
         </button>
-      )}
+  
     </div>
   );
 };

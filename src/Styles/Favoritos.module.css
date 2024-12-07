@@ -1,0 +1,8 @@
+.favoritos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 70vh;
+}

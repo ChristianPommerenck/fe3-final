@@ -3,14 +3,12 @@
     flex-direction:row;
     align-items: center;
     justify-content: center;
-    padding: 10px;
     background-color: var(---background-color);
 }
 
 .logoDH{
     width: 20%;
     height: 10%;
-    color: var(--text-color);
 }
 
 .DH{
