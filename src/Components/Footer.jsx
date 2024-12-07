@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <footer className= {foot}>
         <p className={power}>Powered by</p>
-        <img src="/public/images/DH.png" alt='DH' className={logoDH}/>
-        <img src="/public/DH.ico" alt='DH-logo'className={DH} />
+        <img src="/images/DH.png" alt='DH' className={logoDH}/>
+        <img src="/DH.ico" alt='DH-logo'className={DH} />
        
     </footer>
   )
