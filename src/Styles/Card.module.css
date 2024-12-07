@@ -1,12 +1,13 @@
 .card {
     display: flex;
     flex-direction: column;
-    width: 15%;
-    padding: 15px;
+    width: 16%;
+    padding: 5px;
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
     border: 3px var(--border-color) solid;
     margin: 5px;
+    height: auto;
   }
   
   .img {
@@ -16,7 +17,7 @@
   }
   
   .presentacion {
-    margin-top: 10px;
+    height: auto;
   }
   
   .h2, .h3 {
